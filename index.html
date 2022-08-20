@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper__max-width">
         <header class="header">
             <div class="header__inner">
                 <div class="logo">
@@ -31,7 +31,11 @@
             </div>
 
         </header>
-        <main class="main">
+    </div>
+
+
+    <main class="main">
+        <div class="wrapper__max-width">
             <div class="main__about">
                 <div class="main__left">
                     <h1 class="main__title">
@@ -55,10 +59,10 @@
                 <h6 class="trusted-by__title">
                     Trusted by
                     <ul class="trusted-by__list">
-                        <li class="trusted-by__item"><img src="/images/logo-ipsum.svg" alt="#"></li>
-                        <li class="trusted-by__item"><img src="/images/logo-ipsum2.svg" alt="#"></li>
-                        <li class="trusted-by__item"><img src="/images/logo-ipsum3.svg" alt="#"></li>
-                        <li class="trusted-by__item"><img src="/images/logo-ipsum4.svg" alt="#"></li>
+                        <li class="trusted-by__item"><img src="./images/logo-ipsum.svg" alt="#"></li>
+                        <li class="trusted-by__item"><img src="./images/logo-ipsum2.svg" alt="#"></li>
+                        <li class="trusted-by__item"><img src="./images/logo-ipsum3.svg" alt="#"></li>
+                        <li class="trusted-by__item"><img src="./images/logo-ipsum4.svg" alt="#"></li>
                     </ul>
                 </h6>
             </div>
@@ -74,7 +78,8 @@
                         <ul class="services__list">
                             <li class="services__item">
                                 <h5 class="services__item-title">What I can do for you</h5>
-                                <p class="services__item-desc">Faster, better products that your users love. Here's all
+                                <p class="services__item-desc">Faster, better products that your users love. Here's
+                                    all
                                     the services I provide:</p>
                                 <ul class="services__items">
                                     <li class="services__items-item">Design Strategy</li>
@@ -84,7 +89,8 @@
                             </li>
                             <li class="services__item">
                                 <h5 class="services__item-title">Applications I'm fluent in</h5>
-                                <p class="services__item-desc">Every designer needs the right tools to do the perfect
+                                <p class="services__item-desc">Every designer needs the right tools to do the
+                                    perfect
                                     job. Thankfully, I'm multilingual.</p>
                                 <ul class="services__items">
                                     <li class="services__items-item">Sketch</li>
@@ -94,7 +100,8 @@
                             </li>
                             <li class="services__item">
                                 <h5 class="services__item-title">What you can expect</h5>
-                                <p class="services__item-desc">I design products that are more than pretty. I make them
+                                <p class="services__item-desc">I design products that are more than pretty. I make
+                                    them
                                     shippable and usable.</p>
                                 <ul class="services__items">
                                     <li class="services__items-item">Clean and functional</li>
@@ -119,7 +126,7 @@
                         </h2>
                     </div>
                     <div class="projects__header-right">
-                        <div class="projects__view-btn">
+                        <div class="main__btn">
                             View all projects
                         </div>
                     </div>
@@ -127,39 +134,159 @@
                 <div class="projects__carusel">
                     <ul class="projects__list">
                         <li class="projects__item">
-                            <img src="/images/carusel1.png" alt="" class="projects__img">
+                            <img src="./images/carusel1.png" alt="" class="projects__img">
                             <h6 class="projects__list-title">Branding</h6>
                             <h5 class="projects__list-subtitle">Soulful Rebrand</h5>
                             <div class="projects__list-btn">View Project</div>
                         </li>
                         <li class="projects__item">
-                            <img src="/images/carusel2.png" alt="" class="projects__img">
+                            <img src="./images/carusel2.png" alt="" class="projects__img">
                             <h6 class="projects__list-title">Product Design</h6>
                             <h5 class="projects__list-subtitle">Datadash Product design</h5>
                             <div class="projects__list-btn">View Project</div>
                         </li>
                         <li class="projects__item">
-                            <img src="/images/carusel3.png" alt="" class="projects__img">
+                            <img src="./images/carusel3.png" alt="" class="projects__img">
                             <h6 class="projects__list-title">Web Design</h6>
                             <h5 class="projects__list-subtitle">Maize Website Design</h5>
                             <div class="projects__list-btn">View Project</div>
                         </li>
                     </ul>
                     <div class="projects__carusel-bottom">
-                        <div class="projects__carusel-btn btn-left"><</div>
-                        <div class="projects__carusel-btn btn-right">></div>
+                        <div class="projects__carusel-btn btn-left"><img src="./images/arrow.png" alt="<"></div>
+                        <div class="projects__carusel-btn btn-right"><img src="./images/arrow.png" alt=">"></div>
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="blogs">
+            <div class="blogs__wrapper">
+                <div class="wrapper__max-width">
+                    <div class="blogs__inner">
+                        <div class="blogs__left">
+                            <h6 class="blogs__sub-title">
+                                Blogs
+                            </h6>
+                            <h2 class="blogs__title">
+                                Latest Blogs
+                            </h2>
+                            <div class="wrap__btn-view">
+                                <div class="blogs__btn-view">
+                                    View all
 
+                                </div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1433 5.64833L5.67333 1.17833L6.85167 0L13.3333 6.48167L6.85167 12.9633L5.67333 11.785L10.1433 7.315H0V5.64833H10.1433Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blogs__right">
+                            <div class="blogs__date-wrap">
+                                <div class="blogs__date">April 16, 2021. </div>
+                                <div class="blogs__time">6 mins</div>
+                            </div>
+                            <h4 class="blogs__article">Design tips for designers, that cover everything you need</h4>
+                            <div class="wrap__btn-view">
+                                <div class="blogs__btn-view">
+                                    Read the article
 
+                                </div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1433 5.64833L5.67333 1.17833L6.85167 0L13.3333 6.48167L6.85167 12.9633L5.67333 11.785L10.1433 7.315H0V5.64833H10.1433Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blogs__right">
+                            <div class="blogs__date-wrap">
+                                <div class="blogs__date">April 16, 2021. </div>
+                                <div class="blogs__time">6 mins</div>
+                            </div>
+                            <h4 class="blogs__article">Design tips for designers, that cover everything you need</h4>
+                            <div class="wrap__btn-view">
+                                <div class="blogs__btn-view">
+                                    Read the article
 
+                                </div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1433 5.64833L5.67333 1.17833L6.85167 0L13.3333 6.48167L6.85167 12.9633L5.67333 11.785L10.1433 7.315H0V5.64833H10.1433Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blogs__right">
+                            <div class="blogs__date-wrap">
+                                <div class="blogs__date">April 16, 2021. </div>
+                                <div class="blogs__time">6 mins</div>
+                            </div>
+                            <h4 class="blogs__article">Design tips for designers, that cover everything you need</h4>
+                            <div class="wrap__btn-view">
+                                <div class="blogs__btn-view">
+                                    Read the article
 
-        </main>
+                                </div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1433 5.64833L5.67333 1.17833L6.85167 0L13.3333 6.48167L6.85167 12.9633L5.67333 11.785L10.1433 7.315H0V5.64833H10.1433Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blogs__right">
+                            <div class="blogs__date-wrap">
+                                <div class="blogs__date">April 16, 2021. </div>
+                                <div class="blogs__time">6 mins</div>
+                            </div>
+                            <h4 class="blogs__article">Design tips for designers, that cover everything you need</h4>
+                            <div class="wrap__btn-view">
+                                <div class="blogs__btn-view">
+                                    Read the article
 
-    </div>
+                                </div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1433 5.64833L5.67333 1.17833L6.85167 0L13.3333 6.48167L6.85167 12.9633L5.67333 11.785L10.1433 7.315H0V5.64833H10.1433Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blogs__right">
+                            <div class="blogs__date-wrap">
+                                <div class="blogs__date">April 16, 2021. </div>
+                                <div class="blogs__time">6 mins</div>
+                            </div>
+                            <h4 class="blogs__article">Design tips for designers, that cover everything you need</h4>
+                            <div class="wrap__btn-view">
+                                <div class="blogs__btn-view">
+                                    Read the article
 
+                                </div>
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1433 5.64833L5.67333 1.17833L6.85167 0L13.3333 6.48167L6.85167 12.9633L5.67333 11.785L10.1433 7.315H0V5.64833H10.1433Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
 </body>
 
 </html>
