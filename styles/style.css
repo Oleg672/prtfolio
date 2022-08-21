@@ -41,6 +41,14 @@ ul {
   cursor: pointer;
 }
 
+.header__nav-mini {
+  display: none;
+}
+
+.header__nav-close {
+  display: none;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,5 +588,42 @@ ul {
 
 .wrap__btn-view:hover svg {
   margin-left: 14px;
+}
+
+@media screen and (max-device-width: 375px) {
+  .header__nav {
+    position: relative;
+    display: none;
+  }
+  .header__nav svg {
+    width: 50px;
+    height: 50px;
+  }
+  .header__nav-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .header__nav-mini {
+    cursor: pointer;
+    display: none;
+  }
+  .header__nav-mini span {
+    background-color: #212529;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 7px;
+    display: block;
+  }
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#show {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
