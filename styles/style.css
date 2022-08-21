@@ -916,9 +916,123 @@ body {
   .main .services__items-item {
     margin: 0;
   }
+  .main .projects__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .main .projects__sub-title {
+    margin: 0;
+  }
+  .main .projects__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .main .projects__list {
+    margin-left: 0;
+    position: relative;
+  }
+  .main .projects__item {
+    position: absolute;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 #show {
   display: block;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 140%;
+  -webkit-filter: drop-shadow(0 0 10px #0003);
+          filter: drop-shadow(0 0 10px #0003);
+  -webkit-perspective: 100px;
+          perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  list-style-type: none;
+}
+
+.carousel__slide {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  width: 100%;
+  counter-increment: item;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    -webkit-animation-name: tonext, snap;
+            animation-name: tonext, snap;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .carousel__slide:last-child .carousel__snapper {
+    -webkit-animation-name: tostart, snap;
+            animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */
