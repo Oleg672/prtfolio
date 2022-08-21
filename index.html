@@ -10,22 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <script src="./scripts/scripts.js"></script>
 </head>
 
 <body>
     <div class="wrapper__max-width">
         <header class="header">
             <div class="header__inner">
-                <div class="logo">
-                    Portfolio Creator
+                <div class="header__device-top">
+                    <div class="logo" id="show">
+                        Portfolio Creator
+                    </div>
+                    <div class="header__nav-mini" onclick="showNav()" id="show">
+                        <span></span><span></span><span></span>
+                    </div>
                 </div>
-                <div class="header__nav-mini" onclick="showNav()" id="show">
-                    <span></span><span></span><span></span>
-                </div>
+               
+
                 <nav class="header__nav">
                     <div class="header__nav-close" onclick="closeNav()">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 512">
-                            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path
                                 d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
                         </svg>
@@ -40,33 +44,11 @@
                     </ul>
                 </nav>
             </div>
-            <script> function showNav() {
-
-                    var b = document.getElementsByClassName("header__nav");
-                    b[0].id = "show";
-                    var c = document.getElementsByClassName("header__nav-mini");
-                    c[0].id = ('');
-                    var a = document.getElementsByClassName("header__nav-close");
-                    a[0].id = "show";
-                }
-                function closeNav() {
-
-                    var b = document.getElementsByClassName("header__nav");
-                    b[0].id = "";
-                    var a = document.getElementsByClassName("header__nav-close");
-                    a[0].id = "";
-                    var c = document.getElementsByClassName("header__nav-mini");
-                    c[0].id = ('show');
-                }
-
-
-            </script>
-
         </header>
     </div>
 
-    
-    <main class="main">
+
+     <main class="main">
         <div class="wrapper__max-width">
             <div class="main__about">
                 <div class="main__left">
@@ -90,13 +72,13 @@
             <div class="trusted-by">
                 <h6 class="trusted-by__title">
                     Trusted by
-                    <ul class="trusted-by__list">
-                        <li class="trusted-by__item"><img src="./images/logo-ipsum.svg" alt="#"></li>
-                        <li class="trusted-by__item"><img src="./images/logo-ipsum2.svg" alt="#"></li>
-                        <li class="trusted-by__item"><img src="./images/logo-ipsum3.svg" alt="#"></li>
-                        <li class="trusted-by__item"><img src="./images/logo-ipsum4.svg" alt="#"></li>
-                    </ul>
                 </h6>
+                <ul class="trusted-by__list">
+                    <li class="trusted-by__item"><img src="./images/logo-ipsum.svg" alt="#"></li>
+                    <li class="trusted-by__item"><img src="./images/logo-ipsum2.svg" alt="#"></li>
+                    <li class="trusted-by__item"><img src="./images/logo-ipsum3.svg" alt="#"></li>
+                    <li class="trusted-by__item"><img src="./images/logo-ipsum4.svg" alt="#"></li>
+                </ul>
             </div>
 
             <div class="services">
@@ -350,7 +332,9 @@
         </div>
 
     </main>
-    
+
+   
+
 </body>
 
 </html>
