@@ -601,6 +601,7 @@ body {
             &__item {
                 position: relative;
                 padding: 10px 0;
+                margin: 0 auto;
             }
             &__item::before {
                 content: "";
@@ -620,9 +621,11 @@ body {
             }
             &__items {
                 padding-top: 5px;
+                
             }
             &__items-item {
                 margin: 0;
+                list-style-type: none;
             }
         }
     }

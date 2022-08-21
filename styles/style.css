@@ -731,6 +731,7 @@ body {
   .main .services__item {
     position: relative;
     padding: 10px 0;
+    margin: 0 auto;
   }
   .main .services__item::before {
     content: "";
@@ -753,6 +754,7 @@ body {
   }
   .main .services__items-item {
     margin: 0;
+    list-style-type: none;
   }
 }
 
