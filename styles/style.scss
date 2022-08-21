@@ -265,11 +265,6 @@ ul {
             letter-spacing: 1px;
             color: #000000;
         }
-        &__header-right {
-        }
-
-        &__carusel {
-        }
         &__list {
             display: flex;
             justify-content: space-between;
@@ -310,7 +305,15 @@ ul {
             margin-top: 17px;
             margin-bottom: 19px;
         }
+
         &__list-btn {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            svg {
+                margin-left: 10px;
+                transition-duration: 0.2s;
+            }
             font-family: "Roboto";
             font-style: normal;
             font-weight: 400;
@@ -319,6 +322,9 @@ ul {
             color: #000000;
             padding-left: 32px;
             padding-bottom: 35px;
+        }
+        &__list-btn:hover svg {
+            margin-left: 14px;
         }
         &__carusel-bottom {
             position: absolute;
@@ -365,6 +371,7 @@ ul {
             text-transform: uppercase;
 
             color: #ffa84b;
+            margin-top: 0;
         }
         &__title {
             font-family: "Roboto";
@@ -381,22 +388,84 @@ ul {
         &__btn-view {
             font-family: "Roboto";
             font-style: normal;
-            font-weight: 700;
             font-size: 18px;
             line-height: 18px;
             /* identical to box height, or 100% */
 
-            color: #ffffff;
+            color: inherit;
         }
-        &__inner{
+        &__inner {
             display: flex;
+        }
+        &__left {
+            position: relative;
+            width: 40%;
+        }
+        &__right {
+            position: relative;
+            width: 60%;
+            padding-top: 20px;
+        }
+
+        &__list {
+            list-style-type: none;
+        }
+        &__item {
+            position: relative;
+            list-style-type: none;
+            margin-top: 65px;
+        }
+        &__item:first-child {
+            margin-top: 0;
+        }
+        &__item::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: -35px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        &__date-wrap {
+            display: flex;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 16px;
+            /* identical to box height, or 107% */
+
+            color: rgba(255, 255, 255, 0.7);
+        }
+        &__date {
+        }
+        &__time {
+            margin-left: 3px;
+        }
+        &__article {
+            margin-top: 25px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+            max-width: 489px;
+            margin-bottom: 0;
         }
     }
 }
-.wrap__btn-view{
+.wrap__btn-view {
+    margin: 35px 0;
     display: flex;
     align-items: center;
-    svg{
-        margin-left: 19px;
+    cursor: pointer;
+    svg {
+        margin-left: 10px;
+        transition-duration: 0.2s;
     }
+}
+.wrap__btn-view:hover svg {
+    margin-left: 14px;
 }

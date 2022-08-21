@@ -389,6 +389,13 @@ ul {
 }
 
 .main .projects__list-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -397,6 +404,16 @@ ul {
   color: #000000;
   padding-left: 32px;
   padding-bottom: 35px;
+}
+
+.main .projects__list-btn svg {
+  margin-left: 10px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.main .projects__list-btn:hover svg {
+  margin-left: 14px;
 }
 
 .main .projects__carusel-bottom {
@@ -451,6 +468,7 @@ ul {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #ffa84b;
+  margin-top: 0;
 }
 
 .main .blogs__title {
@@ -467,11 +485,10 @@ ul {
 .main .blogs__btn-view {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   /* identical to box height, or 100% */
-  color: #ffffff;
+  color: inherit;
 }
 
 .main .blogs__inner {
@@ -480,16 +497,88 @@ ul {
   display: flex;
 }
 
+.main .blogs__left {
+  position: relative;
+  width: 40%;
+}
+
+.main .blogs__right {
+  position: relative;
+  width: 60%;
+  padding-top: 20px;
+}
+
+.main .blogs__list {
+  list-style-type: none;
+}
+
+.main .blogs__item {
+  position: relative;
+  list-style-type: none;
+  margin-top: 65px;
+}
+
+.main .blogs__item:first-child {
+  margin-top: 0;
+}
+
+.main .blogs__item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -35px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main .blogs__date-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  /* identical to box height, or 107% */
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main .blogs__time {
+  margin-left: 3px;
+}
+
+.main .blogs__article {
+  margin-top: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+  max-width: 489px;
+  margin-bottom: 0;
+}
+
 .wrap__btn-view {
+  margin: 35px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .wrap__btn-view svg {
-  margin-left: 19px;
+  margin-left: 10px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.wrap__btn-view:hover svg {
+  margin-left: 14px;
 }
 /*# sourceMappingURL=style.css.map */
