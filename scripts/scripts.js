@@ -13,8 +13,9 @@ function init() {
     rollslider();
 }
 
-window.addEventListener('resize', init)
-init();
+    window.addEventListener('resize', init)
+    init();
+
 
 document.querySelector('.btn-right').addEventListener('click', function () {
     count++;
