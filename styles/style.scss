@@ -42,6 +42,20 @@ body {
         &__item {
             margin-right: 40px;
             cursor: pointer;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                transition: width 0.2s ease-out;
+            }
+            &:hover::after{
+                width: 100%;
+                background: linear-gradient(to right,#ff8a56 0%, rgb(239, 91, 12) 100%);
+            }
             a {
                 font-family: "Roboto";
                 font-style: normal;
