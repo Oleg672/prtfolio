@@ -2,7 +2,21 @@ const images = document.querySelectorAll(".projects__item img");
 let widthItem = document.querySelector(".projects__item").offsetWidth;
 const sliderLine = document.querySelector(".projects__list");
 let count = 0;
+let count1 = 0;
 let width;
+
+let trustedCcarousel = document.getElementsByClassName("trusted-by__list");
+function Carousel() {
+    trustedCcarousel[0].style.left = count1 + "px";
+    count1--;
+    console.log(count1);
+};
+
+let timerId = setInterval(() => Carousel(), 40);
+
+
+
+
 function init() {
 
     width = document.querySelector(".projects__carusel").offsetWidth;
@@ -60,8 +74,8 @@ function showNav() {
     var d = document.getElementsByClassName("logo");
     d[0].id = ('');
     var e = document.getElementsByClassName("wrapper__max-width");
-    e[0].id='nav-full-screen';
-    
+    e[0].id = 'nav-full-screen';
+
 
 }
 function closeNav() {
@@ -75,7 +89,7 @@ function closeNav() {
     var d = document.getElementsByClassName("logo");
     d[0].id = ('show');
     var e = document.getElementsByClassName("wrapper__max-width");
-    e[0].id='';
+    e[0].id = '';
 }
 
 
