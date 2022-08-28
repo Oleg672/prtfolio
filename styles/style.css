@@ -587,12 +587,12 @@ body {
   margin-top: 25px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 28px;
   line-height: 36px;
   color: #ffffff;
-  max-width: 489px;
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 .wrap__btn-view {
@@ -826,6 +826,24 @@ body {
   .main .blogs__right {
     width: 90%;
     margin: 0 auto;
+  }
+  .main .blogs__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .main .blogs__date {
+    font-size: 14px;
+  }
+  .main .blogs__article {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .main .blogs__btn-view {
+    font-size: 14px;
+  }
+  .main .blogs .wrap__btn-view {
+    margin-top: 15px;
   }
 }
 

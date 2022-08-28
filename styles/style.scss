@@ -52,9 +52,9 @@ body {
                 height: 1px;
                 transition: width 0.2s ease-out;
             }
-            &:hover::after{
+            &:hover::after {
                 width: 100%;
-                background: linear-gradient(to right,#ff8a56 0%, rgb(239, 91, 12) 100%);
+                background: linear-gradient(to right, #ff8a56 0%, rgb(239, 91, 12) 100%);
             }
             a {
                 font-family: "Roboto";
@@ -469,12 +469,12 @@ body {
             margin-top: 25px;
             font-family: "Roboto";
             font-style: normal;
-            font-weight: 700;
+            font-weight: 400;
             font-size: 28px;
             line-height: 36px;
             color: #ffffff;
-            max-width: 489px;
             margin-bottom: 0;
+            cursor: pointer;
         }
     }
 }
@@ -688,6 +688,26 @@ body {
             &__right {
                 width: 90%;
                 margin: 0 auto;
+            }
+
+            &__title {
+                font-size: 25px;
+                line-height: 25px;
+            }
+            &__date{
+                font-size: 14px;
+            }
+            &__article {
+                margin-top: 15px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            &__btn-view{
+                font-size: 14px;
+            }
+            .wrap__btn-view{
+                margin-top: 15px;
+
             }
         }
     }
