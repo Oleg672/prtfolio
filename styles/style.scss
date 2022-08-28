@@ -12,6 +12,7 @@ body {
     margin: 0 auto;
     position: relative;
 }
+
 .header {
     padding-top: 10px;
     &__inner {
@@ -480,9 +481,9 @@ body {
     .header {
         &__device-top {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            width: 100%;
+            width: 90%;
         }
         &__inner {
             flex-direction: column;
@@ -656,6 +657,23 @@ body {
                     width: auto;
                     height: auto;
                 }
+            }
+        }
+    }
+    .main {
+        width: 90%;
+        position: relative;
+        .blogs {
+            &__inner {
+                flex-direction: column;
+            }
+            &__left {
+                width: 90%;
+                margin: 0 auto;
+            }
+            &__right {
+                width: 90%;
+                margin: 0 auto;
             }
         }
     }
@@ -847,4 +865,11 @@ body {
 }
 #show {
     display: block;
+}
+#nav-full-screen {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
 }
