@@ -296,12 +296,11 @@ body {
             display: flex;
             justify-content: space-between;
             list-style-type: none;
-            margin-left: 113px;
+            // margin-left: 113px;
             transition: ease-in-out 0.5s;
         }
         &__item {
             width: 486px;
-
             background-color: white;
             margin-right: 24px;
         }
@@ -353,6 +352,9 @@ body {
         }
         &__list-btn:hover svg {
             margin-left: 14px;
+        }
+        &__carusel {
+            overflow: hidden;
         }
         &__carusel-bottom {
             position: absolute;
@@ -474,8 +476,8 @@ body {
             margin-top: 25px;
             font-family: "Roboto";
             font-style: normal;
-            font-weight: 400;
-            font-size: 28px;
+            font-weight: 200;
+            font-size: 24px;
             line-height: 36px;
             color: #ffffff;
             margin-bottom: 0;

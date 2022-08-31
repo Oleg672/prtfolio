@@ -381,7 +381,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style-type: none;
-  margin-left: 113px;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
@@ -449,6 +448,10 @@ body {
 
 .main .projects__list-btn:hover svg {
   margin-left: 14px;
+}
+
+.main .projects__carusel {
+  overflow: hidden;
 }
 
 .main .projects__carusel-bottom {
@@ -588,8 +591,8 @@ body {
   margin-top: 25px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
+  font-weight: 200;
+  font-size: 24px;
   line-height: 36px;
   color: #ffffff;
   margin-bottom: 0;

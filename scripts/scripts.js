@@ -1,5 +1,5 @@
 const images = document.querySelectorAll(".projects__item img");
-let widthItem = document.querySelector(".projects__item").offsetWidth;
+let widthItem = document.querySelector(".projects__item").offsetWidth + 24;
 const sliderLine = document.querySelector(".projects__list");
 let count = 0;
 let count1 = 0;
@@ -9,7 +9,6 @@ let trustedCcarousel = document.getElementsByClassName("trusted-by__list");
 function Carousel() {
     trustedCcarousel[0].style.left = count1 + "px";
     count1--;
-    console.log(count1);
 };
 
 let timerId = setInterval(() => Carousel(), 40);
@@ -21,7 +20,6 @@ function init() {
 
     width = document.querySelector(".projects__carusel").offsetWidth;
     if (width <= 425) {
-        console.log(width);
         sliderLine.style.width = width * images.length + 'px';
         images.forEach(item => {
             item.style.width = width + 'px';
@@ -48,13 +46,26 @@ document.querySelector('.btn-left').addEventListener('click', function () {
     console.log(width);
     rollslider();
 })
+
 function rollslider() {
+
     if (width >= 425) {
 
-        sliderLine.style.transform = 'translate(-' + count * widthItem + 'px)';
-    } else {
+        //  var li0 = document.createElement("li");
+        //  var children = sliderLine.children.length + 1
+        //  li0.setAttribute("class", "projects__item")
+        //  li0.appendChild(document.createTextNode("Element "+children));
+        //  sliderLine.appendChild(li0);
 
-        sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+        let li = document.getElementsByClassName("projects__item");
+        let xxx=li.length-1;
+        sliderLine.insertBefore(li[xxx], sliderLine.firstChild)
+        sliderLine.insertBefore(li[0], sliderLine.lastchild)
+       
+
+        sliderLine.style.transform = 'translate(-' + (count * widthItem) + 'px)';
+    } else {
+        sliderLine.style.transform = 'translate(-' + (count * widthItem) + 'px)';
     }
 }
 
