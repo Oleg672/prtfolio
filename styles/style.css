@@ -146,6 +146,7 @@ body {
   margin-right: 40px;
   cursor: pointer;
   color: black;
+  border: 1px solid #c3c1c1;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
@@ -333,7 +334,7 @@ body {
   z-index: 5;
   position: relative;
   display: block;
-  padding-top: 167px;
+  padding-top: 187px;
 }
 
 .main .projects__header {
@@ -374,6 +375,9 @@ body {
 }
 
 .main .projects__list {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,9 +495,9 @@ body {
   position: absolute;
   background-color: black;
   width: 100%;
-  margin-top: -165px;
+  margin-top: -200px;
   margin-bottom: -144px;
-  padding-top: 276px;
+  padding-top: 320px;
 }
 
 .main .blogs__sub-title {

@@ -1,6 +1,6 @@
 const images = document.querySelectorAll(".projects__item img");
 let widthItem = document.querySelector(".projects__item").offsetWidth + 24;
-const sliderLine = document.querySelector(".projects__list");
+const sliderLine = document.querySelector(".projects__list")
 let count = 0;
 let count1 = 0;
 let width;
@@ -17,8 +17,10 @@ let timerId = setInterval(() => Carousel(), 40);
 
 
 function init() {
-
+    widthImages = document.querySelectorAll(".projects__item img").offsetWidth;
     width = document.querySelector(".projects__carusel").offsetWidth;
+    //images = document.querySelectorAll(".projects__item img");
+    
     if (width <= 425) {
         sliderLine.style.width = width * images.length + 'px';
         images.forEach(item => {
@@ -65,7 +67,7 @@ function rollslider() {
 
         sliderLine.style.transform = 'translate(-' + (count * widthItem) + 'px)';
     } else {
-        sliderLine.style.transform = 'translate(-' + (count * widthItem) + 'px)';
+        sliderLine.style.transform = 'translate(-' + (count * width) + 'px)';
     }
 }
 
