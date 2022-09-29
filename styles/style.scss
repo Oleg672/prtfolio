@@ -811,7 +811,98 @@ body {
         }
     }
 }
+.experiance {
+    &__list {
+        max-width: 583;
+        
+        list-style-type: none;
+    }
+    &__list-inner{
+        width: 50%;
+    }
+   
+    &__list-inner:first-child {
+        padding-right: 24px;
+    }
+    &__list-inner:last-child {
+        padding-left: 24px;
+    }
+    &__item-wrapp{
+        margin-left: 20px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    &__item-inner{
+        display: flex;
+    }
+    &__list-wrapper {
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        width: 100%;
+        padding-top: 30px;
+    }
+    &__item:first-child {
+        
+        padding-top: 0px;
+        
+    }
+    &__item::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #e5e5e5;
+    }
+    &__item-container{
+        padding-bottom: 30px;
+    }
+    &__item-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+    }
+    &__title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        color: #000000;
+    }
 
+    &__item-title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        color: #000000;
+    }
+    &__item-description {
+        margin-top: 5px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    &__item-date {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-right: 54px;
+    }
+}
 @media screen and (max-device-width: 376px) {
     .header {
         &__device-top {
