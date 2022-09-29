@@ -7,7 +7,7 @@ let width;
 
 let trustedCcarousel = document.getElementsByClassName("trusted-by__list");
 function Carousel() {
-    trustedCcarousel[0].style.left = count1 + "px";
+   // trustedCcarousel[0].style.left = count1 + "px";
     count1--;
 };
 
