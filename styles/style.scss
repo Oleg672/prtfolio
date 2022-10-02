@@ -56,20 +56,31 @@ body {
     }
 }
 .header {
-    padding-top: 10px;
+    padding-top: 44px;
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
         .logo {
+            color: #000000;
             font-family: "Roboto";
             font-style: normal;
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 28px;
-            text-decoration: none;
-            color: black;
-            cursor: pointer;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            position: relative;
+            max-width: 244px;
+        }
+        .logo::after{
+            content: "";
+            width: 3px;
+            height: 3px;
+            background: linear-gradient(89.94deg, #B16CEA -21.68%, #FF5E69 47.38%, #FF8A56 99.43%, #FFA84B 132.45%);
+            position: absolute;
+            bottom: 3px;
+            right: 0px;
         }
     }
     &__nav-mini {
@@ -1031,8 +1042,8 @@ body {
     }
     &__item-content {
         display: none;
-        font-weight: 400;
-        font-size: 21px;
+        font-weight: 300;
+        font-size: 16px;
         padding-top: 25px;
     }
 }
@@ -1077,6 +1088,17 @@ body {
         font-size: 30px;
         line-height: 30px;
         letter-spacing: 1px;
+        position: relative;
+        max-width: 244px;
+    }
+    &__full-name::after{
+        content: "";
+        width: 3px;
+        height: 3px;
+        background: linear-gradient(89.94deg, #B16CEA -21.68%, #FF5E69 47.38%, #FF8A56 99.43%, #FFA84B 132.45%);
+        position: absolute;
+        bottom: 3px;
+        right: 0px;
     }
     &__full-address {
         font-family: "Roboto";
@@ -1131,6 +1153,7 @@ body {
     margin-top: -1px;
     color: #8a95ad;
     background-color: #000000;
+    padding-bottom: 20px;
 }
 @media screen and (max-device-width: 376px) {
     .header {
