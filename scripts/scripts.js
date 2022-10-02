@@ -5,22 +5,50 @@ let count = 0;
 let count1 = 0;
 let width;
 
-let trustedCcarousel = document.getElementsByClassName("trusted-by__list");
-function Carousel() {
-   // trustedCcarousel[0].style.left = count1 + "px";
-    count1--;
-};
+let openFaqItem;
 
-let timerId = setInterval(() => Carousel(), 40);
+document.addEventListener('click', function (e) {
 
+
+    console.log('evt', e);
+    // let children=e.target.parentElement.parentElement.children[1];
+    // if (e.target.className === "faq__item-text" ) {
+    //     if (children.style.display === "none" || children.style.display == "") {
+    //         children.style.display = "block";
+    //     } else {
+    //         children.style.display = "none";
+    //     }
+
+    // }
+
+    if (e.target.className == "faq__item") {
+        let children = e.target.lastElementChild;
+        let visability = children.style.display;
+        if (visability == "none" || visability == "") {
+           try{openFaqItem.style.display = "none"} catch{}
+            e.target.lastElementChild.style.display = "block";
+            openFaqItem=e.target.lastElementChild;
+        } else {
+            e.target.lastElementChild.style.display = "none"
+        }
+
+    }
+
+});
+
+
+
+// let visability = document.querySelector(".faq__item-content").style.display;
+// if(visability == "block"){document.querySelector(".faq__item-content").style.display = "none";}
+// else{
+// document.querySelector(".faq__item-content").style.display = "block";}
 
 
 
 function init() {
     widthImages = document.querySelectorAll(".projects__item img").offsetWidth;
     width = document.querySelector(".projects__carusel").offsetWidth;
-    //images = document.querySelectorAll(".projects__item img");
-    
+
     if (width <= 425) {
         sliderLine.style.width = width * images.length + 'px';
         images.forEach(item => {
@@ -52,18 +80,11 @@ document.querySelector('.btn-left').addEventListener('click', function () {
 function rollslider() {
 
     if (width >= 425) {
-
-        //  var li0 = document.createElement("li");
-        //  var children = sliderLine.children.length + 1
-        //  li0.setAttribute("class", "projects__item")
-        //  li0.appendChild(document.createTextNode("Element "+children));
-        //  sliderLine.appendChild(li0);
-
         let li = document.getElementsByClassName("projects__item");
-        let xxx=li.length-1;
+        let xxx = li.length - 1;
         sliderLine.insertBefore(li[xxx], sliderLine.firstChild)
         sliderLine.insertBefore(li[0], sliderLine.lastchild)
-       
+
 
         sliderLine.style.transform = 'translate(-' + (count * widthItem) + 'px)';
     } else {

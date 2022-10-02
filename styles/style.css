@@ -4,6 +4,7 @@ a {
 }
 
 ul,
+p,
 body {
   padding: 0;
   margin: 0;
@@ -1016,7 +1017,6 @@ body {
 }
 
 .experiance__list-wrapper {
-  margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1095,6 +1095,326 @@ body {
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6);
   margin-right: 54px;
+}
+
+.testimonials {
+  margin-top: 190px;
+  margin-bottom: 150px;
+}
+
+.testimonials__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials__color {
+  color: #4353ff;
+}
+
+.testimonials__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.testimonials__right {
+  max-width: 586px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 146px;
+}
+
+.testimonials__right-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonials__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #000000;
+  padding: 32px 0 100px;
+}
+
+.testimonials__fullname {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.testimonials__job-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.testimonials__button {
+  border: none;
+  background-color: #000000;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+}
+
+.testimonials__carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.testimonials__carousel-inner {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+}
+
+#testimonials__button2 svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq {
+  background-color: #000000;
+  padding-top: 78px;
+  color: #ffffff;
+}
+
+.faq__header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq__color-title {
+  color: #ffffff;
+}
+
+.faq__color {
+  color: #ff8a56;
+}
+
+.faq__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq__list {
+  width: 48%;
+  margin-top: 100px;
+  list-style-type: none;
+}
+
+.faq__item {
+  margin-top: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq__item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.faq__item::after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 1px;
+  margin-top: 49px;
+  background-color: rgba(229, 229, 229, 0.3);
+}
+
+.faq__item-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq__item-content {
+  display: none;
+  font-weight: 400;
+  font-size: 21px;
+  padding-top: 25px;
+}
+
+.contacts {
+  padding-top: 249px;
+  background-color: #000000;
+}
+
+.contacts__color {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 52px;
+  letter-spacing: 1px;
+  text-transform: inherit;
+  color: #ffffff;
+}
+
+.contacts__color-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  letter-spacing: 0.5px;
+  color: #3c46ff;
+}
+
+.contacts__main {
+  margin-top: 95px;
+  padding-bottom: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__address {
+  color: #5c5c5c;
+}
+
+.contacts__full-name {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.contacts__full-address {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666666;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.contacts__email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__email svg {
+  margin-right: 5px;
+}
+
+.contacts__links {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__list {
+  list-style-type: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  height: 100%;
+  margin-right: 100px;
+}
+
+.contacts__item {
+  margin-bottom: 40px;
+}
+
+.footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: -1px;
+  color: #8a95ad;
+  background-color: #000000;
 }
 
 @media screen and (max-device-width: 376px) {
