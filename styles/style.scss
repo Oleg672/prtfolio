@@ -1118,6 +1118,9 @@ body {
     &__item{
         margin-bottom: 40px;
     }
+    &__item:last-child{
+        margin-bottom: 0px;
+    }
 }
 .footer {
     font-family: "Roboto";

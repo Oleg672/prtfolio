@@ -1406,6 +1406,10 @@ body {
   margin-bottom: 40px;
 }
 
+.contacts__item:last-child {
+  margin-bottom: 0px;
+}
+
 .footer {
   font-family: "Roboto";
   font-style: normal;
