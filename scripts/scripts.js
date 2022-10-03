@@ -1,53 +1,39 @@
 const images = document.querySelectorAll(".projects__item img");
 let widthItem = document.querySelector(".projects__item").offsetWidth + 24;
 const sliderLine = document.querySelector(".projects__list")
+const sliderLine1 = document.querySelector(".testimonials__carousel-inner")
+//wrapper__max-width
+const sliderLine1Count=document.querySelectorAll(".testimonials__main").length
 let count = 0;
 let count1 = 0;
 let width;
-
+let width1= document.querySelector(".testimonials__main").offsetWidth;
 let openFaqItem;
-
-document.addEventListener('click', function (e) {
-
-
-    console.log('evt', e);
-    // let children=e.target.parentElement.parentElement.children[1];
-    // if (e.target.className === "faq__item-text" ) {
-    //     if (children.style.display === "none" || children.style.display == "") {
-    //         children.style.display = "block";
-    //     } else {
-    //         children.style.display = "none";
-    //     }
-
-    // }
-
-    if (e.target.className == "faq__item") {
-        let children = e.target.lastElementChild;
-        let visability = children.style.display;
-        if (visability == "none" || visability == "") {
-           try{openFaqItem.style.display = "none"} catch{}
-            e.target.lastElementChild.style.display = "block";
-            openFaqItem=e.target.lastElementChild;
-        } else {
-            e.target.lastElementChild.style.display = "none"
+function rollslider1() {
+    sliderLine1.style.transform = 'translate(-' + (count1 * width1) + 'px)';
+}
+document.querySelectorAll(".testimonials__button-right").forEach(box =>
+    box.addEventListener("click", function () { 
+        width1= document.querySelector(".testimonials__main").offsetWidth;
+        if(count1<sliderLine1Count-1){
+        count1++;
+        rollslider1() }
+    })
+)
+document.querySelectorAll(".testimonials__button-left").forEach(box =>
+    box.addEventListener("click", function () { 
+        width1= document.querySelector(".testimonials__main").offsetWidth;
+        if(count1>0){
+            count1--;
+            rollslider1() 
         }
-
-    }
-
-});
-
-
-
-// let visability = document.querySelector(".faq__item-content").style.display;
-// if(visability == "block"){document.querySelector(".faq__item-content").style.display = "none";}
-// else{
-// document.querySelector(".faq__item-content").style.display = "block";}
-
-
-
+        
+    })
+)
 function init() {
     widthImages = document.querySelectorAll(".projects__item img").offsetWidth;
     width = document.querySelector(".projects__carusel").offsetWidth;
+    width1 = document.querySelector(".testimonials__main").offsetWidth;
 
     if (width <= 425) {
         sliderLine.style.width = width * images.length + 'px';
@@ -57,6 +43,14 @@ function init() {
         });
         rollslider();
     }
+    // if (width <= 1217) {
+    //     sliderLine.style.width = width * images.length + 'px';
+    //     images.forEach(item => {
+    //         item.style.width = width + 'px';
+    //         item.style.height = 'auto';
+    //     });
+    //     rollslider();
+    // }
 
 }
 
@@ -91,8 +85,20 @@ function rollslider() {
         sliderLine.style.transform = 'translate(-' + (count * width) + 'px)';
     }
 }
-
-
+document.querySelectorAll('.faq__item').forEach(e =>
+    e.addEventListener("click", function (e) { 
+    if (e.target.className == "faq__item") {
+        let children = e.target.lastElementChild;
+        let visability = children.style.display;
+        if (visability == "none" || visability == "") {
+            try { openFaqItem.style.display = "none" } catch { }
+            e.target.lastElementChild.style.display = "block";
+            openFaqItem = e.target.lastElementChild;
+        } else {
+            e.target.lastElementChild.style.display = "none"
+        }
+    }
+}));
 
 
 

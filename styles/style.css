@@ -99,7 +99,7 @@ body {
   content: "";
   width: 3px;
   height: 3px;
-  background: linear-gradient(89.94deg, #B16CEA -21.68%, #FF5E69 47.38%, #FF8A56 99.43%, #FFA84B 132.45%);
+  background: linear-gradient(89.94deg, #b16cea -21.68%, #ff5e69 47.38%, #ff8a56 99.43%, #ffa84b 132.45%);
   position: absolute;
   bottom: 3px;
   right: 0px;
@@ -277,6 +277,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   padding: 0;
   -webkit-transform: translate(1px, 0);
           transform: translate(1px, 0);
@@ -288,10 +292,6 @@ body {
 
 .main .trusted-by__item {
   list-style-type: none;
-  width: 141px;
-  height: 32px;
-  margin-left: 80px;
-  margin-right: 80px;
 }
 
 .main .trusted-by__item img {
@@ -925,10 +925,10 @@ body {
   margin-top: 70px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 338px auto 338px;
-      grid-template-columns: 338px auto 338px;
-  -ms-grid-rows: 305px 305px;
-      grid-template-rows: 305px 305px;
+  -ms-grid-columns: 28% 1fr 28%;
+      grid-template-columns: 28% 1fr 28%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
@@ -1113,6 +1113,10 @@ body {
   margin-bottom: 150px;
 }
 
+.testimonials__left {
+  width: 50%;
+}
+
 .testimonials__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,6 +1207,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  width: 100%;
 }
 
 .testimonials__carousel-inner {
@@ -1215,6 +1220,8 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   position: relative;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 #testimonials__button2 svg {
@@ -1371,7 +1378,7 @@ body {
   content: "";
   width: 3px;
   height: 3px;
-  background: linear-gradient(89.94deg, #B16CEA -21.68%, #FF5E69 47.38%, #FF8A56 99.43%, #FFA84B 132.45%);
+  background: linear-gradient(89.94deg, #b16cea -21.68%, #ff5e69 47.38%, #ff8a56 99.43%, #ffa84b 132.45%);
   position: absolute;
   bottom: 3px;
   right: 0px;
@@ -1423,6 +1430,27 @@ body {
   line-height: 18px;
   height: 100%;
   margin-right: 100px;
+}
+
+.contacts__item a {
+  position: relative;
+}
+
+.contacts__item a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  -webkit-transition: width 0.2s ease-out;
+  transition: width 0.2s ease-out;
+}
+
+.contacts__item a:hover::after {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8a56), to(#ef5b0c));
+  background: linear-gradient(to right, #ff8a56 0%, #ef5b0c 100%);
 }
 
 .contacts__item {
