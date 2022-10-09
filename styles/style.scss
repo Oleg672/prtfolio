@@ -1141,7 +1141,7 @@ body {
         }
     }
     .main {
-        .trusted-by{
+        .trusted-by {
             margin-top: 0;
         }
         padding-top: 25px;
@@ -1284,9 +1284,6 @@ body {
                 font-size: 25px;
                 line-height: 25px;
             }
-            &__sub-title {
-                //margin-top: 80px;
-            }
         }
         .services {
             &__content {
@@ -1367,6 +1364,26 @@ body {
                 }
             }
         }
+        .products {
+            &__album {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+            &__album-box3 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 3;
+                grid-row-end: 3;
+                z-index: 2;
+            }
+            &__album-box4 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 3;
+                z-index: 2;
+            }
+        }
         .section__sub-title {
             font-size: 14px;
         }
@@ -1396,6 +1413,7 @@ body {
             }
         }
         .testimonials {
+            margin-top: 100px;
             .section__header-left {
                 margin: 0 auto;
                 text-align: center;
