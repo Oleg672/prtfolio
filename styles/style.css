@@ -266,6 +266,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 100px;
 }
 
 .main .trusted-by__title {
@@ -1449,6 +1450,9 @@ body {
   }
   .main {
     padding-top: 25px;
+  }
+  .main .trusted-by {
+    margin-top: 0;
   }
   .main__title {
     font-size: 21px;
