@@ -900,6 +900,10 @@ body {
     &__links {
         color: #ffffff;
         display: flex;
+        margin-left: 15px;
+    }
+    &__list:last-child {
+        margin-right: 0;
     }
     &__list {
         list-style-type: none;
@@ -963,7 +967,7 @@ body {
 @media screen and (max-device-width: 1024px) {
     .logo {
         font-size: 20px;
-        &::after{
+        &::after {
             bottom: 7px;
         }
     }
@@ -977,7 +981,6 @@ body {
         font-size: 13px;
     }
     .main {
-        
         .profil__img img {
             width: 100%;
             height: 100%;
@@ -1034,35 +1037,34 @@ body {
             font-size: 29px;
             margin-bottom: 39px;
         }
-        .trusted-by__item img{
+        .trusted-by__item img {
             width: 20vw;
-    
         }
-        .services__content{
+        .services__content {
             padding-top: 60px;
         }
-        
-        
-        .services__item{
+
+        .services__item {
             padding-left: 15px;
             padding-right: 15px;
         }
-        .services__item:last-child{
+        .services__item:last-child {
             padding-right: 0;
         }
-        .services__item:first-child{
+        .services__item:first-child {
             padding-left: 0;
         }
-        .services__item-title{
+        .services__item-title {
             font-size: 18px;
         }
-        .services__item-desc{
+        .services__item-desc {
             padding-top: 10px;
-            font-size: 14px;line-height: 20px;
-        }
-        .services__items-item{
             font-size: 14px;
-    line-height: 15px;
+            line-height: 20px;
+        }
+        .services__items-item {
+            font-size: 14px;
+            line-height: 15px;
         }
     }
     .section__title,
@@ -1079,8 +1081,6 @@ body {
     .faq__item::after {
         margin-top: 28px;
     }
-    
-    
 }
 @media screen and (max-device-width: 768px) {
     .header {
@@ -1146,14 +1146,14 @@ body {
             line-height: 22px;
             margin-bottom: 20px;
         }
-        &__desc{
+        &__desc {
             font-size: 15px;
             line-height: 18px;
         }
-        &__btn{
+        &__btn {
             padding: 5px 15px;
         }
-        &__btnWrap{
+        &__btnWrap {
             margin-top: 20px;
         }
     }
@@ -1179,12 +1179,8 @@ body {
     }
 }
 
-
-
 @media screen and (max-device-width: 630px) {
-    
     .header {
-       
         &__inner {
             flex-direction: column;
         }
@@ -1245,7 +1241,7 @@ body {
             width: 100%;
             text-align: center;
         }
-       
+
         &__title {
             font-size: 25px;
             line-height: 25px;
@@ -1279,15 +1275,16 @@ body {
                 margin-right: 0;
             }
         }
-
-        .services {
+        .section {
             &__title {
                 font-size: 25px;
                 line-height: 25px;
             }
             &__sub-title {
-                margin-top: 80px;
+                //margin-top: 80px;
             }
+        }
+        .services {
             &__content {
                 padding-top: 37px;
             }
@@ -1304,7 +1301,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
             }
-            &__item-left{
+            &__item-left {
                 max-width: 50%;
             }
             &__item::before {
@@ -1334,7 +1331,6 @@ body {
             &__items-item {
                 width: 100%;
             }
-            
         }
         .projects {
             &__carusel {
@@ -1367,9 +1363,100 @@ body {
                 }
             }
         }
-        .section__sub-title{
+        .section__sub-title {
             font-size: 14px;
         }
+        .products {
+            .section__title {
+                text-align: center;
+            }
+            &__header-description {
+                font-size: 16px;
+            }
+        }
+        .experiance {
+            &__item-wrapper:last-child {
+                flex-direction: column;
+                align-items: baseline;
+            }
+            &__list-wrapper {
+                flex-direction: column;
+            }
+            &__list-inner {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            &__title {
+                text-align: center;
+            }
+        }
+        .testimonials {
+            .section__header-left {
+                margin: 0 auto;
+                text-align: center;
+                max-width: 100%;
+            }
+            .section__title {
+                width: 100%;
+            }
+        }
+        .faq {
+            &__content {
+                flex-direction: column;
+            }
+            &__list {
+                width: 100%;
+                margin-top: 30px;
+            }
+            &__list:last-child {
+                margin-top: 0;
+            }
+            &__item {
+                font-size: 15px;
+                line-height: 1.6;
+            }
+            &__item-content {
+                font-size: 14px;
+            }
+        }
+        .contacts {
+            padding-top: 140px;
+            &__sub-title {
+                font-size: 25px;
+                line-height: 25px;
+            }
+            .section__title {
+                font-size: 20px;
+            }
+            &__main {
+                flex-direction: column-reverse;
+                margin-top: 60px;
+                padding-bottom: 15px;
+            }
+            &__links {
+                justify-content: space-between;
+                width: 100%;
+                margin-left: 0;
+            }
+            &__list {
+                margin-right: 0px;
+            }
+            &__item {
+                margin-bottom: 15px;
+            }
+            &__address {
+                width: 100%;
+                margin-top: 60px;
+            }
+            &__full-address,
+            &__email {
+                font-size: 14px;
+            }
+        }
+    }
+    .footer {
+        font-size: 14px;
     }
 }
 @media screen and (max-device-width: 425px) {
@@ -1498,10 +1585,9 @@ body {
                 width: 100%;
                 margin-top: 5px;
             }
-          &__item-left{
-            max-width: 100%;
-          }
-            
+            &__item-left {
+                max-width: 100%;
+            }
         }
         .projects {
             &__carusel {

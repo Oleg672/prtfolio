@@ -1191,6 +1191,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 15px;
+}
+
+.contacts__list:last-child {
+  margin-right: 0;
 }
 
 .contacts__list {
@@ -1588,12 +1593,9 @@ body {
   .main .trusted-by__item {
     margin-right: 0;
   }
-  .main .services__title {
+  .main .section__title {
     font-size: 25px;
     line-height: 25px;
-  }
-  .main .services__sub-title {
-    margin-top: 80px;
   }
   .main .services__content {
     padding-top: 37px;
@@ -1683,6 +1685,104 @@ body {
     height: auto;
   }
   .main .section__sub-title {
+    font-size: 14px;
+  }
+  .main .products .section__title {
+    text-align: center;
+  }
+  .main .products__header-description {
+    font-size: 16px;
+  }
+  .main .experiance__item-wrapper:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .main .experiance__list-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .experiance__list-inner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .main .experiance__title {
+    text-align: center;
+  }
+  .main .testimonials .section__header-left {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+  }
+  .main .testimonials .section__title {
+    width: 100%;
+  }
+  .main .faq__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .faq__list {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .main .faq__list:last-child {
+    margin-top: 0;
+  }
+  .main .faq__item {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .main .faq__item-content {
+    font-size: 14px;
+  }
+  .main .contacts {
+    padding-top: 140px;
+  }
+  .main .contacts__sub-title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .main .contacts .section__title {
+    font-size: 20px;
+  }
+  .main .contacts__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 60px;
+    padding-bottom: 15px;
+  }
+  .main .contacts__links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+  }
+  .main .contacts__list {
+    margin-right: 0px;
+  }
+  .main .contacts__item {
+    margin-bottom: 15px;
+  }
+  .main .contacts__address {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .main .contacts__full-address, .main .contacts__email {
+    font-size: 14px;
+  }
+  .footer {
     font-size: 14px;
   }
 }
